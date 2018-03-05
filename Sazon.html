@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>El Sazon de los Abuelos</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+    <style>
+        h1 {
+            margin-top: 0px;
+            font-family: arno-pro;
+            font-weight: 300;
+            color: white;
+        }
+
+        .footer {
+            background-color: #730808;
+            height: 300px;
+        }
+
+        #footerLogo {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        .footerInfo {
+            margin: auto;
+            width: 50%;
+            color: #ff910d;
+        }
+        .orange, .orange2{
+            color: #ff910d;
+        }
+
+        .info {
+            font-family: arno-pro;
+            font-weight: 300;
+        }
+
+        .back {
+            width: 100%;
+            height: 590px;
+            padding-top: 100px;
+            /* The image used */
+            background-image: url("./saz.jpg");
+
+            /* Set a specific height */
+            min-height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+
+    <div class="back">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="hidden-xs-down col-md-2">
+                <section class="orange2" id="restaurante">RESTAURANTE</section><br>
+                <section class="orange2" id="cafeteria">CAFETERIA</section><br>
+                <section class="orange2" id="panaderia">PANADERIA</section><br>
+                <section class="orange2" id="eventos">EVENTOS</section><br>
+                <section class="orange2" id="ninos">AREA DE NINOS</section><br>
+            </div>
+            <div class="col-md-2">
+                <img src="./sazon.png" class="center-block">
+            </div>
+            <div class="col-md-5 orange">
+                <ul>
+                    <li><a class="orange" href="#"><h1>MENU</h1></li></a>
+                    <li><a class="orange" href="./Reservations.html"><h1>RESERVATIONS</h1></li></a></li>
+                    <li><a class="orange" href="#"><h1>EVENTS</h1></li></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="./sazon.png" id="footerLogo">
+        <div class="footerInfo center-block">
+            <a href="./About.html" id="about">
+                <h1 class="text-center">ABOUT US</h1>
+            </a>
+            <h2 class="text-center info">Tecate, BCN</h2>
+            <h2 class="text-center info">555-555-5555</h2>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            
+        });
+    </script>
+</body>
+
+</html>
