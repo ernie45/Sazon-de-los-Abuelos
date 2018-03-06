@@ -1,9 +1,8 @@
 body {
     width: 100%;
     height: 590px;
-    padding-top: 100px;
     /* The image used */
-    background-image: url("../images/saz.jpg");
+    background-image: url("../images/cake.webp");
 
     /* Set a specific height */
     min-height: 500px;
@@ -13,12 +12,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-right: 0px;
 }
-#headIntro{
+#servicesHeader{
+    /* background: #ececec; */
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 100%;
     margin-bottom: 100px;
+    padding-bottom: 0px;
 }
 #services{
-    margin: auto;
+    position: relative;
+    top: 15px;
+    font-weight: bold;
+    color: red;
+    padding-bottom: 0px;
 }
 #sazonLogo{
     margin-bottom: 100px;
@@ -51,11 +60,19 @@ h1 {
     width: 50%;
     color: #ff910d;
 }
-.orange, .orange2{
+.orange{
     color: #ff910d;
 }
 
 .info {
     font-family: arno-pro;
     font-weight: 300;
+}
+#formRow {
+    width: 50%;
+    margin: auto;
+    background: white;
+    border: 10px;
+    padding: 50px;
+    border-radius: 4%;
 }
