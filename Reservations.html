@@ -1,105 +1,46 @@
 <!DOCTYPE html>
 <html>
 <title>El Sazon de los Abuelos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./public/assets/css/styles.css">
 
 <body>
     <style>
-        h1 {
-            margin-top: 0px;
-            font-family: arno-pro;
-            font-weight: 300;
-            color: white;
-        }
-
-        .footer {
-            background-color: #730808;
-            height: 300px;
-        }
-
-        #footerLogo {
-            height: 50px;
-            width: 50px;
-            position: relative;
-            left: 50px;
-            top: 50px;
-        }
-
-        .footerInfo {
-            margin: auto;
-            width: 50%;
-            color: #ff910d;
-        }
-
         #formRow {
             width: 50%;
             margin: auto;
             background: white;
             border: 10px;
-            padding: 10px;
-            border-color: black;
-            border-width: 10px;
-        }
-        .cont{
-            background:#730808;
-        }
-
-        .orange,
-        .orange2 {
-            color: #ff910d;
-        }
-
-        .info {
-            font-family: arno-pro;
-            font-weight: 300;
-        }
-
-        .back {
-            width: 100%;
-            height: 590px;
-            padding-top: 100px;
-            /* The image used */
-            background-image: url("./saz.jpg");
-
-            /* Set a specific height */
-            min-height: 500px;
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            padding: 50px;
+            border-radius: 4%;
         }
     </style>
 
-
-    <div class="back">
-        <div class="cont">
-        <div class="row" id="formRow">
-            
-                <form action="/action_page.php">
-                    <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">Remember me</label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-        </div>
-        </div>
+    <div class="row" id="formRow">
+        <div class="col-xs-1"></div>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="name" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="number"># of People:</label>
+                <input type="number" class="form-control" id="number">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <div class="col-xs-1"></div>
     </div>
     <div class="footer">
         <img src="./sazon.png" id="footerLogo">
         <div class="footerInfo center-block">
-            <a href="./Sazon.html" id="about">
+            <a href="./index.html" id="about">
                 <h1 class="text-center">HOME</h1>
             </a>
             <h2 class="text-center info">Tecate, BCN</h2>
