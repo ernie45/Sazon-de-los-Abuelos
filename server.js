@@ -1,21 +1,23 @@
-// const express = require("express");
-// /** Create the express app */
-// const app = express();
+const express = require("express");
+/** Create the express app */
+const app = express();
 
-// const handlebars = require("express-handlebars");
-// const bodyParser = require("body-parser");
+const handlebars = require("express-handlebars");
+const bodyParser = require("body-parser");
 
-// /** Declare usage of express app */
-// app.use(express.static("public"));
-// app.use(bodyParser.urlencoded({extended: false}));
+const routes = require("./routes/htmlRoutes");
 
-// app.engine("handlebars", handlebars({defaultLayout: "main"}));
-// app.set("view engine", "handlebars");
+/** Declare usage of express app */
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({extended: false}));
 
-// require("./routes/apiRoutes");
+app.engine("handlebars", handlebars({defaultLayout: "main"}));
+app.set("view engine", "handlebars");
 
-// const PORT = process.env.PORT || 8080;
+app.use(routes);
 
-// app.listen(PORT, function(){
-//     console.log("Listening on port: " + PORT);
-// });
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, function(){
+    console.log("Listening on port: " + PORT);
+});
